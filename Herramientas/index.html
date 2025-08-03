@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de Impresión 3D</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div style="text-align: center; margin-bottom: 20px;">
+  <button onclick="irPaginaInicial()" class="inicio-btn">Ir a Página Inicial</button>
+</div>
+
+  <div class="container">
+    <h1>Calculadora de Costos de Impresión 3D</h1>
+    <div class="form-section">
+      <label>Horas:</label><input type="number" id="horas" min="0"><br>
+      <label>Minutos:</label><input type="number" id="minutos" min="0" max="59"><br>
+      <label>Segundos:</label><input type="number" id="segundos" min="0" max="59"><br>
+
+      <label>Gramos de filamento:</label>
+      <input type="number" id="gramos" step="0.01"><br>
+
+      <label>Precio del filamento (COP):</label>
+      <input type="number" id="precioFilamento"><br>
+
+      <label>Sueldo del diseñador (por hora):</label>
+      <input type="number" id="sueldoDisenador" value="7000"><br>
+
+      <label>Precio de la luz por kWh:</label>
+      <input type="number" id="precioLuz" value="717"><br>
+
+      <label>Consumo máquina (kWh):</label>
+      <input type="number" id="consumoMaquina" step="0.01" value="0.35"><br>
+
+      <label>Desgaste de máquina:</label>
+      <input type="number" id="desgaste" value="3000"><br>
+
+      <label>Margen de error (%):</label>
+      <input type="number" id="margenError" step="0.01" value="20"><br>
+
+      <label>IVA (%):</label>
+      <input type="number" id="iva" step="0.01" value="19"><br>
+
+      <label>Margen de ganancia (%):</label>
+      <input type="number" id="ganancia" step="0.01" value="3"><br>
+
+      <button onclick="calcularCosto()">Calcular</button>
+    </div>
+
+    <div class="resultado-section">
+      <h2>Resultados</h2>
+      <div id="resultados"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
