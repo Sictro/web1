@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zictroc - PortaLab</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: #1f2933;
+      color: #333;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+    }
+
+    .header {
+      text-align: center;
+      padding: 30px 10px;
+    }
+
+    .header h1 {
+      color: #2b6cb0;
+    }
+
+    .header p {
+      color: #666;
+      font-size: 14px;
+    }
+
+    .section {
+      margin: 30px 0;
+      background: #ffffff;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    .section-title {
+      background: #5b8ec4;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .card {
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      padding: 15px;
+      background: #e6eef5;
+    }
+
+    .card h4 {
+      background: #5b8ec4;
+      color: #fff;
+      padding: 6px;
+      font-size: 14px;
+      border-radius: 4px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    /* IMÁGENES GENERALES (NO SE TOCAN) */
+    img {
+      width: 100%;
+      height: auto;
+      max-height: 180px;
+      object-fit: contain;
+      display: block;
+      border-radius: 4px;
+      background: #e6eef5;
+      margin-bottom: 10px;
+    }
+
+    /* SOLO para "Ayúdanos a Hacer Esto Realidad" */
+    .imagen-ayuda {
+      max-height: 320px;
+      margin: 20px auto;
+    }
+
+    .card p {
+      font-size: 13px;
+      line-height: 1.5;
+      text-align: justify;
+    }
+
+    .text-block {
+      padding: 20px;
+      font-size: 14px;
+      line-height: 1.6;
+      text-align: justify;
+    }
+
+    .donations {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .donation-card {
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      text-align: center;
+      padding: 15px;
+      background: #e6eef5;
+    }
+
+    /* SOLO QR de "Apoya Nuestra Causa" */
+    .donation-card img {
+      max-width: 240px;
+      margin: 15px auto;
+    }
+
+    .btn {
+      color: #fff;
+      border: none;
+      padding: 8px 20px;
+      border-radius: 20px;
+      cursor: pointer;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .btn-paypal {
+      background: #003087;
+    }
+
+    .btn-nequi {
+      background: #7b1fa2;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 12px;
+      color: #ccc;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="header">
+    <h1>Construyamos juntos ZICTROC</h1>
+    <p>Transformando la educación con innovación y accesibilidad</p>
+  </div>
+
+  <div class="container">
+
+    <div class="section">
+      <div class="section-title">Conoce a Zictroc</div>
+      <div class="cards">
+
+        <div class="card">
+          <img src="Imagenes/Niño mirando mapa.png" alt="Cómo nació la idea">
+          <h4>¿Cómo nació la idea?</h4>
+          <p>
+            Zictroc es una compañía que nació a partir de una necesidad identificada por sus creadores:
+            en muchas regiones de Colombia existe poca accesibilidad a tecnologías educativas, tanto para
+            instituciones como para personas particulares. Como resultado, la calidad de la educación
+            apoyada en las TIC en Colombia es deficiente. Ante esta problemática, Zictroc propone una
+            solución que permite llegar a cualquier lugar con una estrategia educativa innovadora.
+          </p>
+        </div>
+
+        <div class="card">
+          <img src="Imagenes/yo abrazando el mapa.png" alt="Nuestra misión">
+          <h4>Nuestra Misión</h4>
+          <p>
+            Nuestra misión es fortalecer y transformar el proceso educativo mediante kits tecnológicos
+            innovadores, accesibles y de alta calidad, dirigidos a todo el entorno educativo —instituciones
+            públicas y privadas, en ciudades, municipios y zonas aledañas—. En Zictroc promovemos un cambio
+            del aprendizaje tradicional basado en copiar y repetir hacia un modelo activo enfocado en
+            pensar, diseñar e implementar, brindando a estudiantes y público en general la posibilidad de
+            desarrollar ideas, creatividad y habilidades tecnológicas, contribuyendo de manera significativa
+            a la educación y la enseñanza.
+          </p>
+        </div>
+
+        <div class="card">
+          <img src="Imagenes/Empresa Zictroc.png" alt="Nuestra visión">
+          <h4>Nuestra Visión</h4>
+          <p>
+            Nuestra visión es consolidar a Zictroc como una empresa líder en educación tecnológica innovadora,
+            reconocida por transformar el aprendizaje en una experiencia creativa, práctica y divertida.
+            Aspiramos a llegar a hogares, instituciones educativas y espacios de aprendizaje en ciudades y
+            municipios de Colombia, sin importar el contexto cultural o geográfico, ofreciendo kits y
+            productos educativos elaborados con materiales renovables y responsables con el medio ambiente.
+            Además, buscamos impulsar el desarrollo tecnológico del país, contribuyendo activamente a la
+            formación y creación de soluciones en el ámbito de la robótica, y fomentando en niños y jóvenes
+            el pensamiento, el diseño y la construcción de ideas que aporten al futuro de Colombia.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Conoce PortaLab</div>
+      <div class="cards">
+
+        <div class="card">
+          <img src="Imagenes/Niña armando algo.png" alt="Por qué lo hicimos">
+          <h4>¿Por Qué Lo Hicimos?</h4>
+          <p>
+            Diseñamos un laboratorio portátil pensado para niños, educadores y entusiastas de la tecnología,
+            con el objetivo de facilitar el aprendizaje práctico y experimental. Este laboratorio permite
+            almacenar y organizar componentes electrónicos análogos y digitales en un solo lugar, brindando
+            a cualquier persona la posibilidad de desarrollar, montar y probar proyectos de forma ordenada
+            y segura. Además, su diseño permite guardar y transportar tanto los materiales como los proyectos
+            ya montados, permitiendo almacenar el proyecto sin que se vea afectado su montaje.
+          </p>
+        </div>
+
+        <div class="card">
+          <img src="Imagenes/Niña mostrando componentes.png" alt="Qué es PortaLab">
+          <h4>¿Qué es PortaLab?</h4>
+          <p>
+            PortaLab es un laboratorio portátil diseñado para enseñar electrónica análoga y digital de forma
+            práctica e interactiva. Es compatible con Arduino Uno y Arduino Mega, lo que permite desarrollar
+            y experimentar con una amplia variedad de proyectos tecnológicos. Este laboratorio portátil
+            integra todos los componentes electrónicos necesarios de manera organizada y siempre a
+            disposición del usuario, facilitando el aprendizaje y el desarrollo de ideas sin depender de
+            cajas de herramientas incómodas. Gracias a su diseño compacto y funcional, PortaLab puede
+            trasladarse fácilmente a cualquier lugar, permitiendo trabajar en proyectos electrónicos de
+            forma cómoda y ordenada. Además, PortaLab incluye hojas de datos de los componentes y un manual
+            de electrónica práctica, en el que se explican conceptos fundamentales de la electrónica análoga
+            y digital, así como guías para montar proyectos utilizando todos los materiales que conforman
+            este kit educativo.
+          </p>
+        </div>
+
+        <div class="card">
+          <img src="Imagenes/Niña con computador.png" alt="Cómo funciona">
+          <h4>¿Cómo Funciona?</h4>
+          <p>
+            PortaLab funciona como un laboratorio portátil de aprendizaje práctico. Incluye un manual de
+            electrónica práctica en el que se enseñan las bases fundamentales de la electrónica análoga y
+            digital, permitiendo al usuario comprender los conceptos y aplicarlos directamente en proyectos
+            reales. El laboratorio portátil está disponible en seis presentaciones de color, ofreciendo
+            variedad y personalización para cada usuario. Además, PortaLab se complementa con una plataforma
+            en YouTube, donde se publicarán proyectos adicionales que no se encuentran en el manual,
+            desarrollados utilizando los mismos componentes incluidos en el kit. Adicionalmente, PortaLab
+            está diseñado para ser reparable: si algún módulo o componente llegara a dañarse, el usuario
+            podrá ingresar a la página oficial de Zictroc y solicitar la pieza específica del módulo para su
+            reparación, promoviendo la reutilización, el aprendizaje continuo y la sostenibilidad del
+            producto.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Proceso creativo "PortaLab"</div>
+      <div class="cards">
+
+        <div class="card">
+          <img src="Imagenes/ilustracion hibrida de yo en lab.png" alt="Identificación del problema">
+          <h4>Identificación del Problema</h4>
+          <p>
+            Cuando estás trabajando con proyectos de electrónica y todo está desordenado —componentes
+            sueltos, cables mezclados y sin acceso rápido a las hojas de datos— aparece la frustración.
+            Se pierde tiempo buscando piezas, surgen dudas sobre su uso y el proceso creativo se interrumpe.
+            Esta experiencia nos llevó a reflexionar sobre la necesidad de contar con un laboratorio portátil
+            que permita tener los componentes electrónicos organizados, su información técnica a la mano y
+            todo listo para trabajar, facilitando el aprendizaje práctico y haciendo que crear y
+            experimentar vuelva a ser algo fluido y agradable.
+          </p>
+        </div>
+
+        <div class="card">
+          <img src="Imagenes/Ilustracion grupo empresa.png" alt="Diseño y desarrollo">
+          <h4>Diseño y Desarrollo</h4>
+          <p>
+            Se llevó a cabo la creación del boceto junto con los integrantes de la compañía. Durante este
+            proceso se tomaron decisiones clave sobre qué era realmente necesario, cómo debía funcionar el
+            laboratorio y cómo se vería. A través de la esquematización del proyecto se definieron la
+            distribución de los componentes, la forma de uso y los aspectos funcionales y visuales. Además,
+            se realizó el modelado y la parametrización de cada módulo, permitiendo ajustar dimensiones,
+            funciones y conexiones para responder a cada necesidad y a su usuario.
+          </p>
+        </div>
+
+        <div class="card">
+          <img src="Imagenes/Portalab imagen anima.png" alt="Prototipo final">
+          <h4>Prototipo Final</h4>
+          <p>
+            Una vez realizados los ajustes y correcciones de los errores detectados en el diseño, se procedió
+            a la impresión 3D del modelo. Este proceso permitió visualizar el producto final, evaluar su
+            forma, funcionamiento y todas sus dimensiones, y verificar que el diseño cumpliera con los
+            requerimientos establecidos antes de su implementación definitiva.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Ayúdanos a Hacer Esto Realidad</div>
+      <img src="Imagenes/Foto de los porta lab.png" alt="Ayúdanos a hacer esto realidad" class="imagen-ayuda">
+      <div class="text-block">
+        Necesitamos tu ayuda para hacer este proyecto realidad. Como ya has podido ver, el prototipo del
+        laboratorio portátil ya es una realidad gracias a la tecnología de impresión 3D. Sin embargo, el
+        siguiente gran paso es producir 200 unidades mediante moldeo por inyección, lo que nos permitirá
+        llevar el producto a una etapa real de distribución, con diferentes estilos de color y una calidad
+        industrial.
+        <br><br>
+        Además, necesitamos apoyo para desarrollar el manual de electrónica práctica y adquirir los
+        componentes electrónicos que conformarán cada kit, ya que actualmente nos hemos quedado sin
+        presupuesto. Este proyecto no está pensado solo para Colombia: nuestro objetivo es llevarlo a toda
+        Latinoamérica y, con el tiempo, a niños y espacios educativos en distintos rincones del mundo.
+        <br><br>
+        Creemos firmemente que la educación tecnológica debe ser accesible, práctica y divertida. Cualquier
+        donación, por pequeña que sea, nos acerca a convertir este sueño en realidad. Esta página estará
+        activa durante un año, por lo que difundir la información y apoyarnos en este proceso será de gran
+        ayuda. Hoy contamos con el prototipo listo para entrar a fabricación; con tu apoyo, podremos dar el
+        siguiente paso y hacer que este proyecto llegue a quienes más lo necesitan.
+      </div>
+    </div>
+
+     <!-- TODO EL CONTENIDO ORIGINAL SE MANTIENE -->
+
+    <div class="section">
+      <div class="section-title">Apoya Nuestra Causa</div>
+      <div class="donations">
+
+        <div class="donation-card">
+          <h4>Donar con PayPal</h4>
+          <img src="Imagenes/QR paypal.jpeg" alt="QR PayPal">
+          <p>Escanea para donar</p>
+          <a href="https://paypal.me/CarlosFlorian31?locale.x=es_XC&country.x=CO" target="_blank">
+            <button class="btn btn-paypal">Donar Ahora</button>
+          </a>
+        </div>
+
+        <div class="donation-card">
+          <h4>Donar con Nequi</h4>
+          <img src="Imagenes/QR nequie Original.jpg" alt="QR Nequi">
+          <p>Escanea para donar</p>
+          <a href="https://checkout.nequi.wompi.co/l/jfoBkz" target="_blank">
+            <button class="btn btn-nequi">Donar Ahora</button>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  </div>
+
+  <footer>
+    © 2026 Zictroc. Transformando la educación con innovación y accesibilidad
+    / sictrocolombia@gmail.com
+  </footer>
+
+</body>
+</html>
